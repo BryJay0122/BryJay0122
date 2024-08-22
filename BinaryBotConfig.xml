@@ -1,61 +1,59 @@
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
-<BinaryBot>
-    <BotSettings>
+<BinaryOptionsBot>
+    <Parameters>
         <Market>Volatility 100 Index</Market>
-        <CandleInterval>10</CandleInterval> <!-- In seconds -->
-        <InitialInvestment>1.0</InitialInvestment>
-        <MaxConsecutiveLosses>3</MaxConsecutiveLosses>
-        <MaxDrawdown>20</MaxDrawdown> <!-- In percentage -->
-    </BotSettings>
+        <CandleInterval>10</CandleInterval> <!-- Interval in seconds -->
+        <StartingInvestment>1.0</StartingInvestment>
+        <MaxLossesAllowed>3</MaxLossesAllowed>
+        <MaxDrawdownLimit>20</MaxDrawdownLimit> <!-- Percentage -->
+    </Parameters>
     
     <Indicators>
         <Indicator>
             <Name>FastSMA</Name>
-            <Type>SimpleMovingAverage</Type>
-            <Period>5</Period> <!-- Short period for fast SMA -->
+            <Type>SMA</Type>
+            <Period>5</Period>
         </Indicator>
         <Indicator>
             <Name>SlowSMA</Name>
-            <Type>SimpleMovingAverage</Type>
-            <Period>15</Period> <!-- Longer period for slow SMA -->
+            <Type>SMA</Type>
+            <Period>15</Period>
         </Indicator>
         <Indicator>
             <Name>RSI</Name>
-            <Type>RelativeStrengthIndex</Type>
+            <Type>RSI</Type>
             <Period>14</Period>
             <Overbought>70</Overbought>
             <Oversold>30</Oversold>
         </Indicator>
     </Indicators>
 
-    <TradingRules>
-        <Entry>
-            <BuyCondition>
-                <Condition>FastSMA > SlowSMA</Condition>
-                <Condition>RSI < 70</Condition>
-            </BuyCondition>
-            <SellCondition>
-                <Condition>FastSMA < SlowSMA</Condition>
-                <Condition>RSI > 30</Condition>
-            </SellCondition>
-        </Entry>
-    </TradingRules>
+    <TradingConditions>
+        <BuyRule>
+            <Condition>FastSMA > SlowSMA</Condition>
+            <Condition>RSI < 70</Condition>
+        </BuyRule>
+        <SellRule>
+            <Condition>FastSMA < SlowSMA</Condition>
+            <Condition>RSI > 30</Condition>
+        </SellRule>
+    </TradingConditions>
 
     <RiskManagement>
-        <TakeProfitPercentage>200</TakeProfitPercentage> <!-- 2.00 for 200% -->
-        <StopLossPercentage>100</StopLossPercentage> <!-- 1.00 for 100% -->
+        <TakeProfit>2</TakeProfit> <!-- In percentage or defined units -->
+        <StopLoss>1</StopLoss> <!-- In percentage or defined units -->
     </RiskManagement>
 
-    <Notifications>
-        <Notification>
-            <Type>TradeExecuted</Type>
+    <Alerts>
+        <Alert>
+            <Type>Success</Type>
             <Message>Trade executed successfully.</Message>
-        </Notification>
-        <Notification>
+        </Alert>
+        <Alert>
             <Type>Error</Type>
-            <Message>Error occurred during trade execution.</Message>
-        </Notification>
-    </Notifications>
-</BinaryBot>
+            <Message>An error occurred during trade execution.</Message>
+        </Alert>
+    </Alerts>
+</BinaryOptionsBot>
 ```
