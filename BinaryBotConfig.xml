@@ -41,8 +41,8 @@
     </TradingConditions>
 
     <RiskManagement>
-        <TakeProfit>2</TakeProfit> <!-- In percentage or defined units -->
-        <StopLoss>1</StopLoss> <!-- In percentage or defined units -->
+        <TakeProfit>2</TakeProfit> <!-- In percentage -->
+        <StopLoss>1</StopLoss> <!-- In percentage -->
     </RiskManagement>
 
     <Alerts>
