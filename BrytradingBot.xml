@@ -1,0 +1,59 @@
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<BinaryBot>
+    <BotSettings>
+        <Market>Volatility 100 Index</Market>
+        <CandleInterval>10</CandleInterval> <!-- In seconds -->
+        <InitialInvestment>1.0</InitialInvestment>
+        <MaxConsecutiveLosses>3</MaxConsecutiveLosses>
+        <MaxDrawdown>20</MaxDrawdown> <!-- In percentage -->
+    </BotSettings>
+    
+    <Indicators>
+        <Indicator>
+            <Name>FastSMA</Name>
+            <Type>SimpleMovingAverage</Type>
+            <Period>5</Period> <!-- Short period for fast SMA -->
+        </Indicator>
+        <Indicator>
+            <Name>SlowSMA</Name>
+            <Type>SimpleMovingAverage</Type>
+            <Period>15</Period> <!-- Longer period for slow SMA -->
+        </Indicator>
+        <Indicator>
+            <Name>RSI</Name>
+            <Type>RelativeStrengthIndex</Type>
+            <Period>14</Period>
+            <Overbought>70</Overbought>
+            <Oversold>30</Oversold>
+        </Indicator>
+    </Indicators>
+
+    <TradingRules>
+        <BuyCondition>
+            <Condition>SMA(5) > SMA(15)</Condition>
+            <Condition>RSI < 70</Condition>
+        </BuyCondition>
+        <SellCondition>
+            <Condition>SMA(5) < SMA(15)</Condition>
+            <Condition>RSI > 30</Condition>
+        </SellCondition>
+    </TradingRules>
+
+    <RiskManagement>
+        <TakeProfitPercentage>200</TakeProfitPercentage> <!-- 2.00 or 200% -->
+        <StopLossPercentage>100</StopLossPercentage> <!-- 1.00 or 100% -->
+    </RiskManagement>
+
+    <Notifications>
+        <Notification>
+            <Type>TradeExecuted</Type>
+            <Message>Trade executed successfully.</Message>
+        </Notification>
+        <Notification>
+            <Type>Error</Type>
+            <Message>Error occurred during trade execution.</Message>
+        </Notification>
+    </Notifications>
+</BinaryBot>
+```
