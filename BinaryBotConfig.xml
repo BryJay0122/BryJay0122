@@ -30,19 +30,21 @@
     </Indicators>
 
     <TradingRules>
-        <BuyCondition>
-            <Condition>SMA(5) > SMA(15)</Condition>
-            <Condition>RSI < 70</Condition>
-        </BuyCondition>
-        <SellCondition>
-            <Condition>SMA(5) < SMA(15)</Condition>
-            <Condition>RSI > 30</Condition>
-        </SellCondition>
+        <Entry>
+            <BuyCondition>
+                <Condition>FastSMA > SlowSMA</Condition>
+                <Condition>RSI < 70</Condition>
+            </BuyCondition>
+            <SellCondition>
+                <Condition>FastSMA < SlowSMA</Condition>
+                <Condition>RSI > 30</Condition>
+            </SellCondition>
+        </Entry>
     </TradingRules>
 
     <RiskManagement>
-        <TakeProfitPercentage>200</TakeProfitPercentage> <!-- 2.00 or 200% -->
-        <StopLossPercentage>100</StopLossPercentage> <!-- 1.00 or 100% -->
+        <TakeProfitPercentage>200</TakeProfitPercentage> <!-- 2.00 for 200% -->
+        <StopLossPercentage>100</StopLossPercentage> <!-- 1.00 for 100% -->
     </RiskManagement>
 
     <Notifications>
