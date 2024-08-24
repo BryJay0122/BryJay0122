@@ -162,55 +162,43 @@
   <value name="TEXT">
     <shadow type="text" id="^_+1()=p0A [WE*HA760S">
       <field name="TEXT">Marti Factor: </field>
-    </shadow>
-  </value>
-</block>
-</value>
+</shadow>
 <value name="ARG4">
 <block type="text_prompt_ext" id="6btJb9)//2-">
-  <mutation type="NUMBER"></mutation>
-  <field name="TYPE">NUMBER</field>
-  <value name="TEXT">
-    <shadow type="text" id="y;/Kgbo [wOM6#0|%DI6j">
-      <field name="TEXT">Reset Marti :</field>
-    </shadow>
-  </value>
+<mutation type="NUMBER"></mutation>
+<field name="TYPE">NUMBER</field>
+<value name="TEXT">
+<shadow type="text" id="y;/Kgbo [WOM6#0|%DI6j">
+<field name="TEXT">Reset Marti : </field>
+</shadow>
+</value>
 </block>
 </value>
 <value name="ARG5">
 <block type="text_prompt_ext" id="}Shob*?">
-    <mutation type="NUMBER"></mutation>
+<mutation type="NUMBER"></mutation>
 <field name="TYPE">NUMBER</field>
 <value name="TEXT">
-  <shadow type="text" id="AxA#^wyH[e#cMEq6QV^b">
-    <field name="TEXT">Marti Start After :</field>
-  </shadow>
+<shadow type="text" id="AxA#^wyH[e#cMEq6QV^b">
+<field name="TEXT">Marti Start After : </field>
+</shadow>
 </value>
 </block>
 </value>
-</block>
-<next>
-</block>
-<next>
-</block>
-<next>
-</block>
-<next>
-</block>
-<next>
-</block>
-<next>
-</block>
-<next>
-</block>
-</statement>
+<block type="next"></block>
+<block type="next"></block>
+<block type="next"></block>
+<block type="next"></block>
+<block type="next"></block>
+<block type="next"></block>
+<block type="next"></block>
 <statement name="SUBMARKET">
-  <block type="tradeOptions" id="x=V33~4Lb | (sLv`J[:Eb">
-    <field name="DURATIONTYPE_LIST">t</field>
-    <field name="CURRENCY_LIST">USD</field>
-    <field name="BARRIEROFFSETTYPE_LIST">+</field>
-    <field name="SECONDBARRIEROFFSETTYPE_LIST">-</field>
-    <value name="DURATION">
+<block type="tradeOptions" id="x=V33~4Lb | (sLv`J[:Eb">
+<field name="DURATIONTYPE_LIST">t</field>
+<field name="CURRENCY_LIST">USD</field>
+<field name="BARRIEROFFSETTYPE_LIST">+</field>
+<field name="SECONDBARRIEROFFSETTYPE_LIST">-</field>
+<value name="DURATION">
       <shadow type="math_number" id="0*@58sDc=!c00}*b2vf9">
         <field name="NUM">5</field>
       </shadow>
