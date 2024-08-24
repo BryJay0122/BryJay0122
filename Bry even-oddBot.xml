@@ -49,13 +49,12 @@
 <variable type="" id="aJ}4rnghLSK, V2E-YKmj">fld2:odd</variable>
 <variable type="" id="BQEnP], 9NpClW;r-)dRT">fld2:n</variable>
 </variables>
+  xml
 <block type="trade" id="xgH69|xFn9=70w.*3Vo@" x="0" y="0">
-<field name="MARKET_LIST">synthetic_index</field>
-<field name="SUBMARKET_LIST">random_index</field>
-<field name="SYMBOL_LIST">R_50</field>
-<field name="TRADETYPECAT_LIST">digits</field>
-<field name="TRADETYPE_LIST">evenodd</field>
-<field name="TYPE_LIST">both</field>
+    <field name="MARKET_LIST">synthetic_index</field>
+    <field name="SUBMARKET_LIST">random_index</field>
+    <field name="SYMBOL_LIST">R_50</field>
+    <field name="TRADETYPE_LIST">evenodd</field>
 </block>
 <field name="CANDLEINTERVAL_LIST">60</field>
 <field name="TIME_MACHINE_ENABLED">FALSE</field>
