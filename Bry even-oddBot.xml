@@ -1,323 +1,81 @@
-<xml xmlns="http://www.w3.org/1999/xhtml" collection="false">
-<variables>
-<variable type="" id="_!vmfQGMM*zb7!lr$M'?">put [Result is Win] here</variable>
-<variable type="" id="R3qdt, 8e!p#v77Z@*v7`">put [Contract Detail: profit] here</variable>
-<variable type="" id="*_LI4Px0]PKYFiC{QXbQ">_Target_Profit_</variable>
-<variable type="" id="L=PK7{!AfxTq+=2?=Hn|">_Stop_Loss_</variable>
-<variable type="" id=": PS|;9;et, 6(2G @lQ1*">_First_Stake_</variable>
-<variable type="" id="Z:j+m7;TLXH]!e?ORKSY">_Martingale_Factor_</variable>
-<variable type="" id="0`XIMQXa3 | FB-Xu`PW)}">_Martingale_Level_</variable>
-<variable type="" id="?J;, Yr:dq0c4WbR0;2[-">_Martingale_Start_After_</variable>
-<variable type="" id="xAxGcmF-RG03}9h)0gCS">[fld2] Last Digit List</variable>
-<variable type="" id="M:3jt:T.!gOLr#1V$c.a">[fld2] How many ticks?</variable>
-<variable type="" id="t, MmB3UsU2{BveA]{AYp">[fld2] Number (0-9)</variable>
-<variable type="" id="@{ZlX!^jx+g2=uYU%; 8A">OP</variable>
-<variable type="" id="$Autk.aFo: R; L-A(4fG_">_stake</variable>
-<variable type="" id="b(O^eJ[q8Hk-cwF5I;-E">profit</variable>
-<variable type="" id="JR8tzjJyX[8E.;c=Gtjl">Continue</variable>
-<variable type="" id="`P7Gksg15A}, 695+2]$w">fld2: even%</variable>
-<variable type="" id="k, L@G5T*gba-5tf.rcQF">fld2:odd%</variable>
-<variable type="" id="M=!d9rdY%TV-Y$-PfTGa">fld2: LowestStat</variable>
-<variable type="" id="! [%ni [G]*EmCOXZ!3U=1">fld2: LastDigitList</variable>
-<variable type="" id="xsqaY-i-.yu^65bf{kaj">fld2: TotalStats</variable>
-<variable type="" id="FLIY@Z4bFeEoITgNsg.8">fld2: HighestStat</variable>
-<variable type="" id="surs,r.Xyh#b_QZ;u PV">Duration</variable>
-<variable type="" id="zr-S3%?_juf$h370q0:5">FirstStake</variable>
-<variable type="" id="cJIO3F1ql{]-xs`2MvS3">Total_tick_analyze</variable>
-<variable type="" id="v-NsryAGhGz-$f5Fm@;- -">fld2: DigitPercentList</variable>
-<variable type="" id="|~~[Bub0I)grKF|:X$fl">fld2: DigitPercent</variable>
-<variable type="" id="0xb-f}}+j=vgzYmac, R[">fld2: Number StatsList</variable>
-<variable type="" id="[YfHDOnL93{dV}0yWayw">win_count</variable>
-<variable type="" id="w, w*Ey-h`}WR?Lo) obZD">loss_count</variable>
-<variable type="" id="kS/$v^hM, g#dgwf; `8!-">TargetProfit</variable>
-<variable type="" id="t3E)nD}t, SwF!/Fk'; sQ">fld2: j</variable>
-<variable type="" id="KU@q%5 OU?Z1)/GgB8+K">fld2: Number Value</variable>
-<variable type="" id="g=EC+zC%), yo3;?XkDk9">fld2:m</variable>
-<variable type="" id="D{1+cwnYC$f1d:J9}twl">Stoploss</variable>
-<variable type="" id="T2_l:jl;ZzZ[3J$-p,Q!">fld2: NumberElement</variable>
-<variable type="" id="7'!rC|PS5E1Qwr; f^oS]">fld2: MaxStats</variable>
-<variable type="" id=", OI. `-U`Fimx{eTc-y_">MartiLossLevel</variable>
-<variable type="" id="kpADpV_Cnzs^HL(GWIeW">fld2: NumberPosition</variable>
-<variable type="" id="{G-d|fmO4H%F:JbVrQ-c">fld2:MinStats</variable>
-<variable type="" id="5931%LI|: TV1N`k1--qj">loss_level</variable>
-<variable type="" id="fH(Gpq-n KBK7, n#6ft">MartiFactor</variable>
-<variable type="" id="Ss [GN001TKIVU}zbwo-h">fld2: NumberStat</variable>
-<variable type="" id="fhURG! [8S, (_/sWJ/mOq">MartiStart</variable>
-<variable type="" id="z[jD^Z|GOLOR@KU[Wk, Y">fld2:k</variable>
-<variable type="" id="5-fMR$I-?MTtvloByCsZ">fld2: DigitStat</variable>
-<variable type="" id="~~o=fKYIwr1-J2IjUh-$">fld2:even</variable>
-<variable type="" id="aJ}4rnghLSK, V2E-YKmj">fld2:odd</variable>
-<variable type="" id="BQEnP], 9NpClW;r-)dRT">fld2:n</variable>
-</variables>
-  xml
-<block type="trade" id="xgH69|xFn9=70w.*3Vo@" x="0" y="0">
-    <field name="MARKET_LIST">synthetic_index</field>
-    <field name="SUBMARKET_LIST">random_index</field>
-    <field name="SYMBOL_LIST">R_50</field>
-    <field name="TRADETYPE_LIST">evenodd</field>
-</block>
-<field name="CANDLEINTERVAL_LIST">60</field>
-<field name="TIME_MACHINE_ENABLED">FALSE</field>
-<field name="RESTARTONERROR">TRUE</field>
-<statement name="INITIALIZATION">
-  <block type="text_print" id="WhC?G0{##I2vPa5^L5V.">
-    <value name="TEXT">
-      <shadow type="text" id="VS*-_m)y{{vC.-S3)/dw">
-        <field name="TEXT">Adiwira XML Bot</field>
-      </shadow>
-    </value>
-    <next>
-      <block type="text_print" id="D()@gN}+o.CiH4DxHe[k">
-        <value name="TEXT">
-          <shadow type="text" id="4@h2b69X?tF^%~V/uzY[">
-            <field name="TEXT">Even Odd % Binary Bot</field>
-          </shadow>
-        </value>
-        <next>
-          <block type="variables_set" id="b6v:X(0+z4G|jv{:QdY(">
-            <field name="VAR" id="surs,r.Xyh#b_QZ;u|PV" variabletype="">Duration</field>
-            <value name="VALUE">
-              <block type="math_number" id="ME-8d06m@K:1zo79g5RH">
-                <field name="NUM">5</field>
-              </block>
-            </value>
-            <next>
-              <block type="variables_set" id="`Z[ezGF.8rALSY]W`ed+">
-                <field name="VAR" id="cJI03F1ql{]-xs 2MvS3" variabletype="">Total_tick_analyze</field>
-                <value name="VALUE">
-                  <block type="math_number" id="N2+WK(xQ*, E3p.{wvp">
-                    <field name="NUM">100</field>
-                  </block>
-                </value>
-                <next>
-                  <block type="variables_set" id="8 #buuxiR1uxpQ.sIxBq">
-                    <field name="VAR" id="@{ZlX!^jx+g2=uYU%; 8A" variabletype="">OP</field>
-                    <value name="VALUE">
-                      <block type="logic_boolean" id="Nr; +ESC^!%) r6V}Wy:co">
-                        <field name="BOOL">FALSE</field>
-                      </block>
-                    </value>
-                    <next>
-                      <block type="procedures_callnoreturn" id="kC4DXqU:50?">
-                        <mutation name="A_W Blok 1">
-                          <arg name="_Target_Profit_"></arg>
-                          <arg name="_Stop_Loss_"></arg>
-                          <arg name="_First_Stake_"></arg>
-                          <arg name="_Martingale_Factor_"></arg>
-                          <arg name="_Martingale_Level_"></arg>
-                          <arg name="_Martingale_Start_After_"></arg>
-                        </mutation>
-                        <value name="ARGO">
-                          <block type="text_prompt_ext" id="G6Xi[@Fdx:6795_0PT|!">
-                          </block>
-                        </value>
-                      </block>
-                    </next>
-                  </block>
-                </next>
-              </block>
-            </next>
-          </block>
-        </next>
-      </block>
-    </next>
-  </block>
-</statement>
-  xml
-<block type="text_prompt_ext">
-  <mutation type="NUMBER"></mutation>
-  <field name="TYPE">NUMBER</field>
-  <value name="TEXT">
-    <shadow type="text" id="mkESMlq[`6dG+uzkXh2f">
-      <field name="TEXT">Stop Loss : </field>
-    </shadow>
-  </value>
-</block>
-<value name="ARG1">
-<block type="text_prompt_ext">
-  <mutation type="NUMBER"></mutation>
-  <field name="TYPE">NUMBER</field>
-  <value name="TEXT">
-    <shadow type="text" id="mkESMlq[`6dG+uzkXh2f">
-      <field name="TEXT">Stop Loss :</field>
-    </shadow>
-  </value>
-</block>
-</value>
-<value name="ARG2">
-<block type="text_prompt_ext">
-  <mutation type="NUMBER"></mutation>
-  <field name="TYPE">NUMBER</field>
-  <value name="TEXT">
-    <shadow type="text" id="4MQ^3zbpL! ({~X{Md}SZ">
-      <field name="TEXT">Stake : </field>
-    </shadow>
-  </value>
-</block>
-</value>
-  <value name="ARG3">
-<block type="text_prompt_ext" id="aUO(^+?j2Tnody.">
-<mutation type="NUMBER"></mutation>
-<field name="TYPE">NUMBER</field>
-<value name="TEXT">
-<shadow type="text" id="^_+1()=p0A [WE*HA760S">
-<field name="TEXT">Marti Factor: </field>
-</shadow>
-</value> 
-<value name="ARG4">
-<block type="text_prompt_ext" id="6btJb9)//2-">
-<mutation type="NUMBER"></mutation>
-<field name="TYPE">NUMBER</field>
-<value name="TEXT">
-<shadow type="text" id="y;/Kgbo [WOM6#0|%DI6j">
-<field name="TEXT">Reset Marti: </field>
-</shadow>
-</value>
-</block>
-</value>
-<value name="ARG5">
-<block type="text_prompt_ext" id="}Shob*?">
-<mutation type="NUMBER"></mutation>
-<field name="TYPE">NUMBER</field>
-<value name="TEXT">
-<shadow type="text" id="AxA#^wyH[e#cMEq6QV^b">
-<field name="TEXT">Marti Start After : </field>
-</shadow>
-</value>
-</block>
-</value>
-<block type="next"></block>
-<block type="next"></block>
-<block type="next"></block>
-<block type="next"></block>
-<block type="next"></block>
-<block type="next"></block>
-<block type="next"></block>
-<statement name="SUBMARKET">
-<block type="tradeOptions" id="x=V33~4Lb | (sLv`J[:Eb">
-<field name="DURATIONTYPE_LIST">t</field>
-<field name="CURRENCY_LIST">USD</field>
-<field name="BARRIEROFFSETTYPE_LIST">+</field>
-<field name="SECONDBARRIEROFFSETTYPE_LIST">-</field>
-<value name="DURATION">
-      <shadow type="math_number" id="0*@58sDc=!c00}*b2vf9">
-        <field name="NUM">5</field>
-      </shadow>
-      <block type="variables_get" id="R)!RVd: He!2xl] [jl!g(">
-        <field name="VAR" id="surs,r.Xyh#b_QZ; u | PV" variabletype="">Duration</field>
-      </block>
-    </value>
-    <value name="AMOUNT">
-      <shadow type="math_number" id="ml)25~7^q}319}vjf:%K">
-        <field name="NUM">1</field>
-      </shadow>
-      <block type="procedures_callreturn" id="HwVhw/[, NhU4YH@uU5^b">
-        <mutation name="A_W Stake"></mutation>
-      </block>
-    </value>
-  </block>
-</statement>
-</block>
-</value>
-<block type="before_purchase" id="i-CIx. (Onm4?ihxzA}Y]" collapsed="true" x="0" y="766">
-  <statement name="BEFOREPURCHASE_STACK">
-    <block type="variables_set" id="e^0$KPzU/5dV8dc+5X^4">
-      <field name="VAR" id="@{ZlX!^jx+g2=uYU%; 8A" variabletype="">OP</field>
-      <value name="VALUE">
-        <block type="logic_boolean" id="*annnTshemyXl(:Dp3Ct">
-          <field name="BOOL">FALSE</field>
-        </block>
-      </value>
-      <next>
-        xml
-<field name="VAR" id="$Autk.aFo: R; L-A(4fG_" variabletype="_stake">_stake</field>
-<block type="math_number" id="8M!%N2:W2r1cS=tvBqxM">
-  <field name="NUM">0</field>
-</block>
-</value>
-  <block type="controls_if" id="-2K^5T@7olg3M6J%14$B">
-    <value name="IFO">
-      <block type="logic_compare" id="ChDetwZuo; cU6yL{-">
-        <field name="OP">GT</field>
-        <value name="A" variabletype="loss_count">
-          <block type="variables_get" id=". Y*ozly;">
-            <field name="VAR" id="w, w*Ey-h}WR?Lo)obZD"></field>
+xml
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <variables>
+    <variable type="number" id="stake">_stake</variable>
+    <variable type="number" id="profit">profit</variable>
+    <variable type="number" id="loss_count">loss_count</variable>
+    <variable type="number" id="target_profit">TargetProfit</variable>
+    <variable type="string" id="trade_type">trade_type</variable>
+  </variables>
+
+  <block type="before_purchase" id="before_purchase_block" collapsed="true" x="0" y="0">
+    <statement name="BEFOREPURCHASE_STACK">
+      <block type="variables_set" id="set_trade_type">
+        <field name="VAR" id="trade_type">trade_type</field>
+        <value name="VALUE">
+          <block type="logic_boolean">
+            <field name="BOOL">FALSE</field>
           </block>
         </value>
-        <value name="B" variabletype="loss_level">
-          <block type="variables_get" id="CL] -">
-            <field name="VAR" id="5931%LI]: TV1Nk1-qj"></field>
+      </block>
+    </statement>
+  </block>
+
+  <block type="controls_if" id="check_odd_even" x="10" y="100">
+    <value name="IF0">
+      <block type="logic_compare">
+        <field name="OP">EQ</field>
+        <value name="A">
+          <block type="math_number">
+            <field name="NUM">1</field> <!-- Replace with actual number representing the trade outcome -->
+          </block>
+        </value>
+        <value name="B">
+          <block type="math_number">
+            <field name="NUM">1</field> <!-- Check for odd -->
           </block>
         </value>
       </block>
     </value>
     <statement name="DO0">
-      <block type="variables_set" id="5931% LII: TV1Nk1--qj" variabletype="loss_level">
+      <block type="variables_set" id="set_profit_odd">
+        <field name="VAR" id="profit">profit</field>
         <value name="VALUE">
-          <block type="variables_get" id="Eal: QN:u+Rt [V_J6/">
-            <field name="VAR" id="w, w*Ey-h^}WR?Lo)obZD"></field>
+          <block type="math_number">
+            <field name="NUM">stake * 2</field> <!-- Example logic for winning a trade -->
           </block>
         </value>
       </block>
     </statement>
     <next>
-      <block type="controls_if" id="?*0^p-(7r2d3-T7z81hl">
-        <value name="IFO">
-          <block type="logic_compare" id=")y(t.fo) Lb.Zcrs5V4kc">
-            <field name="OP">GT</field>
+      <block type="controls_if" id="check_loss">
+        <value name="IF0">
+          <block type="logic_compare">
+            <field name="OP">EQ</field>
             <value name="A">
-              <block type="variables_get" id="xSlsjibK) miodTkmM%GI">
-                <field name="VAR" id=", 01.-U`Fimx{eTc-y_">MartiLossLevel</field>
+              <block type="math_number">
+                <field name="NUM">0</field>
               </block>
             </value>
             <value name="B">
-              <block type="math_number" id="+{rz6u4h%JKj:-">
-                <field name="NUM">0</field>
+              <block type="math_number">
+                <field name="NUM">0</field> <!-- Checks for losing condition -->
               </block>
             </value>
           </block>
         </value>
-        <next>
-          <block type="controls_if" id="|~H{~C=_%yzL(L+lh?">
-            <value name="IFO">
-              <block type="logic_operation" id=":V^7]C!6(P+^v,0!l">
-                <field name="OP">AND</field>
-                <value name="A">
-                  <block type="logic_compare" id="4c9GWE)n30t}n[:HT;, P">
-                    <field name="OP">GT</field>
-                    <value name="A">
-                      <block type="variables_get" id="(_/sWJ/m0q">
-                        <field name="VAR" id="fhURG! [8S,">MartiStart</field>
-                      </block>
-                    </value>
-                    <value name="B">
-                      <block type="math_number" id="m'.">
-                        <field name="NUM">0</field>
-                      </block>
-                    </value>
-                  </block>
-                </value>
-                <value name="B">
-                  <block type="logic_compare" id="XWUrB+iXH{$8H(G.pj]P">
-                    <field name="OP">GTE</field>
-                    <value name="A">
-                      <block type="variables_get" id="96)hM+J+rW1h/2CICNV=">
-                        <field name="VAR" id="w, w*Ey-h^}WR?">loss_count</field>
-                      </block>
-                    </value>
-                    <value name="B">
-                      <block type="variables_get" id="1ghuM[:g9B!OkEkJq-+">
-                        <field name="VAR" id="fhURG! [8S,">MartiLossLevel</field>
-                      </block>
-                    </value>
-                  </block>
-                </value>
+        <statement name="DO0">
+          <block type="variables_set" id="increment_loss">
+            <field name="VAR" id="loss_count">loss_count</field>
+            <value name="VALUE">
+              <block type="math_change" id="change_loss">
+                <field name="VAR" id="loss_count">loss_count</field>
+                <value name="NUM">1</value>
               </block>
             </value>
           </block>
-        </next>
+        </statement>
       </block>
     </next>
   </block>
-</next>
-
+</xml>
