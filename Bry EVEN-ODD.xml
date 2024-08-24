@@ -1,60 +1,110 @@
 <xml xmlns="http://www.w3.org/1999/xhtml" collection="false">
-<variables>
-<variable type="" id="_!vmfQGMM*zb7!lr$M'?">put [Result is Win] here</variable>
-<variable type="" id="R3qdt, 8e!p#v77Z@*v7`">put [Contract Detail: profit] here</variable>
-<variable type="" id="*_LI4Px0]PKYFiC{QXbQ">_Target_Profit_</variable>
-<variable type="" id="L=PK7{!AfxTq+=2?=Hn|">_Stop_Loss_</variable>
-<variable type="" id=": PS|;9;et, 6(2G @lQ1*">_First_Stake_</variable>
-<variable type="" id="Z:j+m7;TLXH]!e?ORKSY">_Martingale_Factor_</variable>
-<variable type="" id="0`XIMQXa3 | FB-Xu`PW)}">_Martingale_Level_</variable>
-<variable type="" id="?J;, Yr:dq0c4WbR0;2[-">_Martingale_Start_After_</variable>
-<variable type="" id="xAxGcmF-RG03}9h)0gCS">[fld2] Last Digit List</variable>
-<variable type="" id="M:3jt:T.!gOLr#1V$c.a">[fld2] How many ticks?</variable>
-<variable type="" id="t, MmB3UsU2{BveA]{AYp">[fld2] Number (0-9)</variable>
-<variable type="" id="@{ZlX!^jx+g2=uYU%; 8A">OP</variable>
-<variable type="" id="$Autk.aFo: R; L-A(4fG_">_stake</variable>
-<variable type="" id="b(O^eJ[q8Hk-cwF5I;-E">profit</variable>
-<variable type="" id="JR8tzjJyX[8E.;c=Gtjl">Continue</variable>
-<variable type="" id="`P7Gksg15A}, 695+2]$w">fld2: even%</variable>
-<variable type="" id="k, L@G5T*gba-5tf.rcQF">fld2:odd%</variable>
-<variable type="" id="M=!d9rdY%TV-Y$-PfTGa">fld2: LowestStat</variable>
-<variable type="" id="! [%ni [G]*EmCOXZ!3U=1">fld2: LastDigitList</variable>
-<variable type="" id="xsqaY-i-.yu^65bf{kaj">fld2: TotalStats</variable>
-<variable type="" id="FLIY@Z4bFeEoITgNsg.8">fld2: HighestStat</variable>
-<variable type="" id="surs,r.Xyh#b_QZ;u PV">Duration</variable>
-<variable type="" id="zr-S3%?_juf$h370q0:5">FirstStake</variable>
-<variable type="" id="cJIO3F1ql{]-xs`2MvS3">Total_tick_analyze</variable>
-<variable type="" id="v-NsryAGhGz-$f5Fm@;- -">fld2: DigitPercentList</variable>
-<variable type="" id="|~~[Bub0I)grKF|:X$fl">fld2: DigitPercent</variable>
-<variable type="" id="0xb-f}}+j=vgzYmac, R[">fld2: Number StatsList</variable>
-<variable type="" id="[YfHDOnL93{dV}0yWayw">win_count</variable>
-<variable type="" id="w, w*Ey-h`}WR?Lo) obZD">loss_count</variable>
-<variable type="" id="kS/$v^hM, g#dgwf; `8!-">TargetProfit</variable>
-<variable type="" id="t3E)nD}t, SwF!/Fk'; sQ">fld2: j</variable>
-<variable type="" id="KU@q%5 OU?Z1)/GgB8+K">fld2: Number Value</variable>
-<variable type="" id="g=EC+zC%), yo3;?XkDk9">fld2:m</variable>
-<variable type="" id="D{1+cwnYC$f1d:J9}twl">Stoploss</variable>
-<variable type="" id="T2_l:jl;ZzZ[3J$-p,Q!">fld2: NumberElement</variable>
-<variable type="" id="7'!rC|PS5E1Qwr; f^oS]">fld2: MaxStats</variable>
-<variable type="" id=", OI. `-U`Fimx{eTc-y_">MartiLossLevel</variable>
-<variable type="" id="kpADpV_Cnzs^HL(GWIeW">fld2: NumberPosition</variable>
-<variable type="" id="{G-d|fmO4H%F:JbVrQ-c">fld2:MinStats</variable>
-<variable type="" id="5931%LI|: TV1N`k1--qj">loss_level</variable>
-<variable type="" id="fH(Gpq-n KBK7, n#6ft">MartiFactor</variable>
-<variable type="" id="Ss [GN001TKIVU}zbwo-h">fld2: NumberStat</variable>
-<variable type="" id="fhURG! [8S, (_/sWJ/mOq">MartiStart</variable>
-<variable type="" id="z[jD^Z|GOLOR@KU[Wk, Y">fld2:k</variable>
-<variable type="" id="5-fMR$I-?MTtvloByCsZ">fld2: DigitStat</variable>
-<variable type="" id="~~o=fKYIwr1-J2IjUh-$">fld2:even</variable>
-<variable type="" id="aJ}4rnghLSK, V2E-YKmj">fld2:odd</variable>
-<variable type="" id="BQEnP], 9NpClW;r-)dRT">fld2:n</variable>
-</variables>
-<block type="trade" id="xgH69|xFn9=70w.*3Vo@" x="0" y="0">
-<field name="MARKET_LIST">synthetic_index</field>
-<field name="SUBMARKET_LIST">random_index</field>
-<field name="SYMBOL_LIST">R_50</field>
-<field name="TRADETYPECAT_LIST">digits</field>
-<field name="TRADETYPE_LIST">evenodd</field>
-<field name="TYPE_LIST">both</field>
+<variable id="hmV10GMM7ZTb7i1SM" put="Result is Win"  />
+<variable id="R3qdiRelp977Z"  />
+<variable id="L1hP4KYFJCtXh6C"  />
+<variable id="PKSrP16jATg2JQ1"  />
+<variable id="Z1M7H3XbaFbPXU"  />
+<variable id="uQXmQTx3iBWRQz"  />
+<variable id="RG9vYrdgQpCS4bDZ"  />
+<variable id="M3jtT.lbfUgLVvA"  />
+<variable id="M3nBMu81zBveAysp"  />
+<variable id="z2tXAuKzF.rL8A.vUS"  />
+<variable id="aURcJygRj-aC4lHG"  />
+<variable id="BkO7aJbhK.R.E.Si"  />
+<variable id="P7kC8zXbA15e"  />
+<variable id="JRGc5sGg9BE.g5jw"  />
+<variable id="k1dG.GGST.g2aStf"  />
+<variable id="PTFGa.k1d2LowestStat"  />
+<variable id="xegay"  />
+<variable id="1lXqny"  />
+<variable id="FLy.24BFebT8gN"  />
+<variable id="szr.sj39z.juL7oQ.5"  />
+<variable id="c1JO3F1q.ld2x2MVS3"  />
+<variable id="f5bfm9"  />
+<variable id="Dxb-1.yrdgGkf.mac"  />
+<variable id="hTWRLobLbZD.loss.count"  />
+<variable id="yWPDHO1obD3D.way.win.counts"  />
+<variable id="KU.d5.OU5.G7bZI"  />
+<variable id="13E.IN3E.SfWk.SQ.d2"  />
+<variable id="cW.c1.g.d.EC+eC"  />
+<variable id="7Q3K.d9.K1b.mc"  />
+<variable id="DJ.t2.JWZYSs.3"  />
+<variable id="c1J22S3E1.q.p.jd"  />
+<variable id="y.MartiLossLevel"  />
+<variable id="dApYvH.Cnzz.h.GWLc"  />
+<variable id="kG9noM4.y.C.Jvre.b"  />
+<variable id="q.loss.level"  />
+<variable id="gHi.k8K.k.nr6f"  />
+<variable id="SaNO1K1V.T.j2wo.h"  />
+<variable id="7HUrG.j.S.j.w.mU"  />
+<variable id="Z1hGD.l.G.l.O.r"  />
+<variable id="o.o.byK.y.C.Jz"  />
+<variable id="MTiV.o.C.l.l.S.i"  />
+<variable id="YkM2.d2.odds.block"  />
+<field name="SUBMARKET_LIST" index="field" />
+<field name="SYMBOL_LIST" r="50" index="field" />
+<field name="TRADETYPE_LIST"  />
+<field name="CANDLEINTERVAL_LIST"  />
+<field name="TRADEPELIST"  />
+<field name="CANDLEENTERAL_LIST"  />
+<field name="TIME_MACHINE_ENABLED"  />
+<block type="procedures_callreturn" id="a4jDqN(o@n.C4DhDHeIk" name="TEXT">
+<value name="TEXT">
+<shadow type="text" id="a4h2X699.bV!V.UZy">
+<field name="TEXT">Even Odd $ Binary Bot (x/x)</field>
+</shadow>
+</value>
 </block>
-</xml>
+<block type="variables_set" id="b6v.x(24v/qQDW">
+<field name="VAR" id="surar.yuhfb.q2.ME.uP" variabletype="Duration/RH">NUM</field>
+</block>
+<block type="math_number" id="jyVb806m.1.kZc79sH" name="VALUE">
+<field name="NUM" value="50" />
+</block>
+<block type="variables_set" id="CJIc3fq1l" name="VALUE">
+<field name="VAR" id="2MVS3.variables.set.Total.Tick.analysis.B.R.a.l.y.e.w" variabletype="Total.Tick.analysis.B.R.a.l.y.e.w" />
+</block>
+<block type="math_number" id="N2.WQK.(j3sp" name="NUM/100.variables.set">
+<field name="NUM" value="100" />
+</block>
+<block type="variables_set" id="8#buuxRjTuP.s1x8.collapsed" name="VALUE">
+<field name="VAR" id="g12(X.logic.boolean.u3a.VariableType.o.w.y/co" variabletype="logic.boolean" />
+</block>
+<block type="procedures_callreturn" id="kC4DxQu.s074h.xIT.O.a(" name="Target">
+<value name="ARG0">
+<block type="variables_get" id="6x5r.6795.OPTI" name="NUM/100.variables.set">
+<field name="NUM" value="100" />
+</block>
+</value>
+<value name="ARG1">
+<block type="variables_get" id="ekUZkCN.pnpxr0j10" name="NUM/100.variables.set">
+<field name="NUM" value="100" />
+</block>
+</value>
+</block>
+<block type="variables_set" id="zZg7dZ.z6g.ZbBg" name="TEXT">
+<field name="VAR" id="mkEsmG.bdq.uXzh2f" variabletype="TEXT.Stop.Loss" />
+</block>
+<block type="variables_set" id="zzg733.EU.kg(Bey" name="NUMBER">
+<field name="VAR" id="2M3C.zbpLii.(XjMGSZ" variabletype="NUMBER.Stake" />
+</block>
+<block type="variables_set" id="auO+.T2nDoy(LQEj" name="NUMBER">
+<field name="VAR" id="t10.pOA.NUM.H47G0S" variabletype="NUMBER.Mart.Factor" />
+</block>
+<block type="variables_set" id="6tbUb9j/2" name="NUMBER">
+<field name="VAR" id="ky.gbWOM.b.d.i.g.d1g" variabletype="NUMBER.Reset.Mart" />
+</block>
+<block type="variables_set" id="iSb.h0b?" name="NUMBER">
+<field name="VAR" id="4dnei.7LYi.NUM.B.E.R" variabletype="NUMBER" />
+</block>
+<block type="variables_set" id="Axa.WyHlle.M.c6Q.v" name="TEXT">
+<field name="VAR" id="OX4t.thooL.s(O.Ew.s.d" variabletype="TEXT.Mart.Start.After" />
+</block>
+<block type="procedures_callreturn" id="vX33.4bl.sl.v(jeb" name="SUBMARKET">
+<value name="STATEMENT">
+<block type="variables_get" id="R2jRV.d.Hertz.lj.lg" name="NUM">
+<field name="NUM" value="50" />
+</block>
+</value>
+</block>
+<block
