@@ -312,9 +312,9 @@
         <field name="NUM">0</field>
       </shadow>
       xml
-      <block type="procedures_callreturn" id="-
-      <mutation name="Least frequent LD"></mutation>
-      </block>
+<block type="procedures_callreturn" id="-">
+  <mutation name="Least frequent LD"></mutation>
+</block>
     </value>
   </block>
 </value>
