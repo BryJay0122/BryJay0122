@@ -57,7 +57,6 @@
 <field name="TRADETYPE_LIST">evenodd</field>
 <field name="TYPE_LIST">both</field>
 </block>
-</xml>
 <field name="CANDLEINTERVAL_LIST">60</field>
 <field name="TIME_MACHINE_ENABLED">FALSE</field>
 <field name="RESTARTONERROR">TRUE</field>
