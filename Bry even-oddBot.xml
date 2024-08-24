@@ -1,60 +1,62 @@
-<xml version="1.0" encoding="UTF-8"?>
-<BinaryOptionsBot>
-    <Parameters>
-        <Market>Volatility 100 Index</Market>
-        <CandleInterval>10</CandleInterval> <!-- Interval in seconds -->
-        <StartingInvestment>1.0</StartingInvestment>
-        <MaxLossesAllowed>3</MaxLossesAllowed>
-        <MaxDrawdownLimit>20</MaxDrawdownLimit> <!-- Percentage -->
-    </Parameters>
-    
-    <Indicators>
-        <Indicator>
-            <Name>FastSMA</Name>
-            <Type>SMA</Type>
-            <Period>5</Period>
-        </Indicator>
-        <Indicator>
-            <Name>SlowSMA</Name>
-            <Type>SMA</Type>
-            <Period>15</Period>
-        </Indicator>
-        <Indicator>
-            <Name>RSI</Name>
-            <Type>RSI</Type>
-            <Period>14</Period>
-            <Overbought>70</Overbought>
-            <Oversold>30</Oversold>
-        </Indicator>
-    </Indicators>
-
-    <TradingConditions>
-        <BuyRule>
-            <Condition>FastSMA > SlowSMA</Condition>
-            <Condition>RSI < 70</Condition>
-        </BuyRule>
-        <SellRule>
-            <Condition>FastSMA < SlowSMA</Condition>
-            <Condition>RSI > 30</Condition>
-        </SellRule>
-    </TradingConditions>
-
-    <RiskManagement>
-        <TakeProfit>2</TakeProfit> <!-- In percentage -->
-        <StopLoss>1</StopLoss> <!-- In percentage -->
-    </RiskManagement>
-
-    <Alerts>
-        <Alert>
-            <Type>Success</Type>
-            <Message>Trade executed successfully.</Message>
-        </Alert>
-        <Alert>
-            <Type>Error</Type>
-            <Message>An error occurred during trade execution.</Message>
-        </Alert>
-    </Alerts>
-</BinaryOptionsBot>
+<xml xmlns="http://www.w3.org/1999/xhtml" collection="false">
+<variables>
+<variable type="" id="_!vmfQGMM*zb7!lr$M'?">put [Result is Win] here</variable>
+<variable type="" id="R3qdt, 8e!p#v77Z@*v7`">put [Contract Detail: profit] here</variable>
+<variable type="" id="*_LI4Px0]PKYFiC{QXbQ">_Target_Profit_</variable>
+<variable type="" id="L=PK7{!AfxTq+=2?=Hn|">_Stop_Loss_</variable>
+<variable type="" id=": PS|;9;et, 6(2G @lQ1*">_First_Stake_</variable>
+<variable type="" id="Z:j+m7;TLXH]!e?ORKSY">_Martingale_Factor_</variable>
+<variable type="" id="0`XIMQXa3 | FB-Xu`PW)}">_Martingale_Level_</variable>
+<variable type="" id="?J;, Yr:dq0c4WbR0;2[-">_Martingale_Start_After_</variable>
+<variable type="" id="xAxGcmF-RG03}9h)0gCS">[fld2] Last Digit List</variable>
+<variable type="" id="M:3jt:T.!gOLr#1V$c.a">[fld2] How many ticks?</variable>
+<variable type="" id="t, MmB3UsU2{BveA]{AYp">[fld2] Number (0-9)</variable>
+<variable type="" id="@{ZlX!^jx+g2=uYU%; 8A">OP</variable>
+<variable type="" id="$Autk.aFo: R; L-A(4fG_">_stake</variable>
+<variable type="" id="b(O^eJ[q8Hk-cwF5I;-E">profit</variable>
+<variable type="" id="JR8tzjJyX[8E.;c=Gtjl">Continue</variable>
+<variable type="" id="`P7Gksg15A}, 695+2]$w">fld2: even%</variable>
+<variable type="" id="k, L@G5T*gba-5tf.rcQF">fld2:odd%</variable>
+<variable type="" id="M=!d9rdY%TV-Y$-PfTGa">fld2: LowestStat</variable>
+<variable type="" id="! [%ni [G]*EmCOXZ!3U=1">fld2: LastDigitList</variable>
+<variable type="" id="xsqaY-i-.yu^65bf{kaj">fld2: TotalStats</variable>
+<variable type="" id="FLIY@Z4bFeEoITgNsg.8">fld2: HighestStat</variable>
+<variable type="" id="surs,r.Xyh#b_QZ;u PV">Duration</variable>
+<variable type="" id="zr-S3%?_juf$h370q0:5">FirstStake</variable>
+<variable type="" id="cJIO3F1ql{]-xs`2MvS3">Total_tick_analyze</variable>
+<variable type="" id="v-NsryAGhGz-$f5Fm@;- -">fld2: DigitPercentList</variable>
+<variable type="" id="|~~[Bub0I)grKF|:X$fl">fld2: DigitPercent</variable>
+<variable type="" id="0xb-f}}+j=vgzYmac, R[">fld2: Number StatsList</variable>
+<variable type="" id="[YfHDOnL93{dV}0yWayw">win_count</variable>
+<variable type="" id="w, w*Ey-h`}WR?Lo) obZD">loss_count</variable>
+<variable type="" id="kS/$v^hM, g#dgwf; `8!-">TargetProfit</variable>
+<variable type="" id="t3E)nD}t, SwF!/Fk'; sQ">fld2: j</variable>
+<variable type="" id="KU@q%5 OU?Z1)/GgB8+K">fld2: Number Value</variable>
+<variable type="" id="g=EC+zC%), yo3;?XkDk9">fld2:m</variable>
+<variable type="" id="D{1+cwnYC$f1d:J9}twl">Stoploss</variable>
+<variable type="" id="T2_l:jl;ZzZ[3J$-p,Q!">fld2: NumberElement</variable>
+<variable type="" id="7'!rC|PS5E1Qwr; f^oS]">fld2: MaxStats</variable>
+<variable type="" id=", OI. `-U`Fimx{eTc-y_">MartiLossLevel</variable>
+<variable type="" id="kpADpV_Cnzs^HL(GWIeW">fld2: NumberPosition</variable>
+<variable type="" id="{G-d|fmO4H%F:JbVrQ-c">fld2:MinStats</variable>
+<variable type="" id="5931%LI|: TV1N`k1--qj">loss_level</variable>
+<variable type="" id="fH(Gpq-n KBK7, n#6ft">MartiFactor</variable>
+<variable type="" id="Ss [GN001TKIVU}zbwo-h">fld2: NumberStat</variable>
+<variable type="" id="fhURG! [8S, (_/sWJ/mOq">MartiStart</variable>
+<variable type="" id="z[jD^Z|GOLOR@KU[Wk, Y">fld2:k</variable>
+<variable type="" id="5-fMR$I-?MTtvloByCsZ">fld2: DigitStat</variable>
+<variable type="" id="~~o=fKYIwr1-J2IjUh-$">fld2:even</variable>
+<variable type="" id="aJ}4rnghLSK, V2E-YKmj">fld2:odd</variable>
+<variable type="" id="BQEnP], 9NpClW;r-)dRT">fld2:n</variable>
+</variables>
+<block type="trade" id="xgH69|xFn9=70w.*3Vo@" x="0" y="0">
+<field name="MARKET_LIST">synthetic_index</field>
+<field name="SUBMARKET_LIST">random_index</field>
+<field name="SYMBOL_LIST">R_50</field>
+<field name="TRADETYPECAT_LIST">digits</field>
+<field name="TRADETYPE_LIST">evenodd</field>
+<field name="TYPE_LIST">both</field>
+</block>
 </xml>
 <field name="CANDLEINTERVAL_LIST">60</field>
 <field name="TIME_MACHINE_ENABLED">FALSE</field>
@@ -604,64 +606,6 @@
     </next>
   </block>
 </next>
-    <shadow>
-  <block type="text_join" id="aR6hxyR(vCKAHNjhjjtw">
-    <mutation items="12"></mutation>
-    <value name="ADD0">
-      <block type="text" id="hg]km, rfa0VLi7M-01R5">
-        <field name="TEXT">Even = </field>
-      </block>
-    </value>
-    <value name="ADD1">
-      <block type="procedures_callreturn" id="}Dqw8B8i:fy+-">
-        <mutation name="LD Even (%)"></mutation>
-      </block>
-    </value>
-    <value name="ADD2">
-      <block type="text" id="6au?S9;!xz [ou, qu.92">
-        <field name="TEXT"> % || </field>
-      </block>
-    </value>
-    <value name="ADD3">
-      <block type="text" id="B5XRpV:p-X51(aw*#XIY">
-        <field name="TEXT">Odd = </field>
-      </block>
-    </value>
-    <value name="ADD4">
-      <block type="procedures_callreturn" id="*QXo*ih!">
-        <mutation name="LD Odd (%)"></mutation>
-      </block>
-    </value>
-    <value name="ADD5">
-      <block type="text" id="v#T%2~]h[}oGA; YFhFOP">
-        <field name="TEXT"> %</field>
-      </block>
-    </value>
-    <value name="ADD6">
-      <block type="text" id="rf-;28+_[Tk2WGN)1yGg">
-        <field name="TEXT">|| Most LD is Odd &gt; </field>
-      </block>
-    </value>
-    <value name="ADD7">
-      <block type="procedures_callreturn" id=":J]thgp, QJa_#Vp?HhSjR">
-        <mutation name="Most frequent LD"></mutation>
-      </block>
-    </value>
-    <value name="ADD8">
-      <block type="text" id="@Ek: *bCF4d4~b#}e0_y/">
-        <field name="TEXT"> || Least LD is Even &gt;
-        </field>
-      </block>
-    </value>
-    <value name="ADD9">
-      <block type="procedures_callreturn" id="G2D)@.5.kmQuG*$|1LGj">
-        <mutation name="Least frequent LD"></mutation>
-      </block>
-    </value>
-    <value name="ADD10">
-    </value>
-  </block>
-</shadow>
     <block type="text" id="8*0+-WOhRol)rHe]+ubY">
   <field name="TEXT">|| LD Odd: </field>
 </block>
@@ -1037,4 +981,4 @@ variabletype="">profit</field>
     </block>
   </value>
 </block>
-          
+         
