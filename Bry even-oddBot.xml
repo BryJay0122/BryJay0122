@@ -313,7 +313,8 @@
       </shadow>
       xml
 <block type="procedures_callreturn" id="-">
-  <mutation name="Least frequent LD"></mutation>
+  xml
+<mutation name="Least frequent LD"></mutation><mutation name="Least frequent LD"></mutation>
 </block>
     </value>
   </block>
