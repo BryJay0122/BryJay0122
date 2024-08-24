@@ -229,6 +229,7 @@
         </block>
       </value>
       <next>
+        xml
           <block type="controls_if" id="6ga{HiV@PN^s|V:Xzn67">
   <mutation elseif="1" else="1"></mutation>
   <value name="IF0">
@@ -482,12 +483,14 @@
   </block>
 </value>
 <next>
+  xml
   <block type="purchase" id="W6q#Z-I3q3d [d3-`S[ds">
     <field name="PURCHASE_LIST">DIGITEVEN</field>
   </block>
 </next>
 </block>
 <next>
+  xml
   <block type="logic_operation" id="/*0Gd^8C @-g5{L_VEhR">
     <field name="OP">AND</field>
     <value name="A">
@@ -528,6 +531,7 @@
     </value>
   </block>
 </next>
+    xml
       <block type="procedures_callreturn" id="-">
   <mutation name="Most frequent LD"></mutation>
   <value name="NAME">
@@ -536,7 +540,6 @@
     </block>
   </value>
 </block>
-    xml
       <value name="B">
   <block type="logic_compare" id="7^mh7q44P@XWX+tz505r">
     <field name="OP">GT</field>
@@ -563,6 +566,7 @@
   </block>
 </statement>
 <next>
+  xml
   <block type="controls_if" id=")sbK8qgW8bgqW96Nr$59">
     <value name="IFO">
       <block type="logic_compare" id="$ffp/VW(kns4hG%YqAuq">
@@ -588,6 +592,7 @@
       </block>
     </statement>
     <next>
+      xml
       <block type="notify" id="klM)+YON@hgJxWt4{-b2">
         <field name="NOTIFICATION_TYPE">info</field>
         <field name="NOTIFICATION_SOUND">silent</field>
@@ -600,6 +605,7 @@
     </next>
   </block>
 </next>
+  xml
     <block type="text" id="8*0+-WOhRol)rHe]+ubY">
   <field name="TEXT">|| LD Odd: </field>
 </block>
@@ -610,6 +616,7 @@
 </block>
 </value>
 <next>
+  xml
   <block type="variables_set" id="R#;7GV7+k@P*aZPuN, QY">
     <field name="VAR" id="@{ZlX!^jx+g2=uYU%; 8A"></field>
     <value name="VALUE">
@@ -618,6 +625,7 @@
       </block>
     </value>
     <next>
+      xml
       <block type="notify" id="0,}q*_9}axlHJ{7kEBW+">
         <field name="NOTIFICATION_TYPE">success</field>
         <field name="NOTIFICATION_SOUND">silent</field>
@@ -630,6 +638,7 @@
           </block>
         </value>
         <next>
+          xml
           <block type="purchase" id="k.Mlqvt2gBunm, W%}r8n">
             <field name="PURCHASE_LIST">DIGITODD</field>
           </block>
@@ -657,7 +666,6 @@
           </block>
         </value>
         <value name="B">
-          xml
             <block type="logic_boolean" id="ih#mIk7(GpP(f|quoN;6">
   <field name="BOOL">FALSE</field>
 </block>
