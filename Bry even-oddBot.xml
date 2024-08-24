@@ -155,21 +155,22 @@
   </value>
 </block>
 </value>
-<value name="ARG3">
+  <value name="ARG3">
 <block type="text_prompt_ext" id="aUO(^+?j2Tnody.">
-  <mutation type="NUMBER"></mutation>
-  <field name="TYPE">NUMBER</field>
-  <value name="TEXT">
-    <shadow type="text" id="^_+1()=p0A [WE*HA760S">
-      <field name="TEXT">Marti Factor: </field>
+<mutation type="NUMBER"></mutation>
+<field name="TYPE">NUMBER</field>
+<value name="TEXT">
+<shadow type="text" id="^_+1()=p0A [WE*HA760S">
+<field name="TEXT">Marti Factor: </field>
 </shadow>
+</value> 
 <value name="ARG4">
 <block type="text_prompt_ext" id="6btJb9)//2-">
 <mutation type="NUMBER"></mutation>
 <field name="TYPE">NUMBER</field>
 <value name="TEXT">
 <shadow type="text" id="y;/Kgbo [WOM6#0|%DI6j">
-<field name="TEXT">Reset Marti : </field>
+<field name="TEXT">Reset Marti: </field>
 </shadow>
 </value>
 </block>
