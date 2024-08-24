@@ -123,15 +123,16 @@
     </next>
   </block>
 </statement>
- xml
-<mutation type="NUMBER"></mutation>
-<field name="TYPE">NUMBER</field>
-<value name="TEXT">
-<shadow type="text" id="ekUCZKNPnxrgc01?Q, =$">
-<field name="TEXT">Target Profit :</field>
-</shadow>
-</value>
-</block> </value> 
+  xml
+<block type="text_prompt_ext">
+  <mutation type="NUMBER"></mutation>
+  <field name="TYPE">NUMBER</field>
+  <value name="TEXT">
+    <shadow type="text" id="mkESMlq[`6dG+uzkXh2f">
+      <field name="TEXT">Stop Loss : </field>
+    </shadow>
+  </value>
+</block>
 <value name="ARG1">
 <block type="text_prompt_ext">
   <mutation type="NUMBER"></mutation>
