@@ -217,6 +217,7 @@
   </block>
 </statement>
 </block>
+</value>
 <block type="before_purchase" id="i-CIx. (Onm4?ihxzA}Y]" collapsed="true" x="0" y="766">
   <statement name="BEFOREPURCHASE_STACK">
     <block type="variables_set" id="e^0$KPzU/5dV8dc+5X^4">
