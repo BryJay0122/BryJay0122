@@ -303,6 +303,7 @@
     </block>
   </value>
 </block>
+        xml
           <value name="B">
   <block type="math_number_property" id="j1:T{[82?LB1at]7/54W">
     <mutation divisor_input="false"></mutation>
@@ -359,6 +360,7 @@
     </statement>
   </block>
 </statement>
+        xml
           <block type="controls_if" id="%; i!_TtsF^zFPYhxkIDh">
   <value name="IF0">
     <block type="logic_compare" id="$@!,66P]%0c:!.m-`%A">
@@ -416,6 +418,7 @@
     </block>
   </next>
 </block>
+        xml
           <value name="ADD4">
   <block type="procedures_callreturn" id="uX.61`1iZ*4v/y^`0Z=">
     <mutation name="LD Odd (%)"></mutation>
@@ -532,6 +535,7 @@
     </block>
   </value>
 </block>
+    xml
       <value name="B">
   <block type="logic_compare" id="7^mh7q44P@XWX+tz505r">
     <field name="OP">GT</field>
@@ -652,6 +656,7 @@
           </block>
         </value>
         <value name="B">
+          xml
             <block type="logic_boolean" id="ih#mIk7(GpP(f|quoN;6">
   <field name="BOOL">FALSE</field>
 </block>
@@ -757,6 +762,7 @@
     </block>
   </statement>
 </block>
+    xml
 <block type="procedures_defreturn" id="e_)Y1VUG^rh/^U,=QKZS" collapsed="true"
     <block type="procedures_defreturn" id="=78^x1, M_K`EPoWP8B#4" collapsed="true"
 x="0" y="925">
