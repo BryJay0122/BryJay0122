@@ -235,7 +235,6 @@
   <field name="NUM">0</field>
 </block>
 </value>
-<next>
   <block type="controls_if" id="-2K^5T@7olg3M6J%14$B">
     <value name="IFO">
       <block type="logic_compare" id="ChDetwZuo; cU6yL{-">
