@@ -1,4 +1,3 @@
-xml
 <xml xmlns="http://www.w3.org/1999/xhtml">
   <variables>
     <variable type="number" id="stake">_stake</variable>
