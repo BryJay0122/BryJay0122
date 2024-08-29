@@ -1,3 +1,4 @@
+xml
 <xml xmlns="http://www.w3.org/1999/xhtml" is_dbot="true" collection="false">
 <variables>
 <variable type="" id="hI@Y}s|1TxY^B? | ePQo3" islocal="false" iscloud="false">Perda
@@ -8,7 +9,7 @@ iscloud="false">Meta</variable>
 iscloud="false">Entrada</variable>
 <variable type="" id="NF4F:F)/OD%/WGw?#p21" islocal="false"
 iscloud="false">Ultimo Digito</variable>
-<variable type="" id="F4wur(a=}{e-X~0WBkHA" islocal="false"
+<variable type="" id="F4wur(a=}{e-X-OWBkHA" islocal="false"
 iscloud="false">Entrada Win</variable>
 <variable type="" id="kxU*av.0/,x!Uqz^o-J2" islocal="false" iscloud="false">Loss
 Counter</variable>
@@ -20,7 +21,7 @@ Levels</variable>
 After Loss</variable>
 <variable type="" id="D}?wx^DrELtnu0Qv}a:-" islocal="false"
 iscloud="false">text</variable>
-<variable type="" id="wK%rQ(4[d8I:MK0?suHa" islocal="false"
+<variable type="" id="wK%rQ(4[d8I:MKO?suHa" islocal="false"
 iscloud="false">text1</variable>
 <variable type="" id="Ii-kos]oH1swo!m*r/aJ" islocal="false"
 iscloud="false">text2</variable>
@@ -35,15 +36,21 @@ Label</variable>
 </variables>
 <block type="trade_definition" id="$#;)=`krAB-L3IC!djYj" x="0" y="0">
 <statement name="TRADE_OPTIONS">
-- <block type="trade_definition_market" id="2Sb [ZK}0bX]$_8byDJ#-" deletable="false"
+<block type="trade_definition_market" id="2Sb [ZK}0bX]$_8byDJ#-" deletable="false"
 movable="false">
 <field name="MARKET_LIST">synthetic_index</field>
 <field name="SUBMARKET_LIST">random_index</field>
 <field name="SYMBOL_LIST">R_100</field>
- <next>
+<next>
 <block type="trade_definition_restartonerror" id="0[c%okov2-1_X0TRbb.g"
 deletable="false" movable="false">
 <field name="RESTARTONERROR">TRUE</field>
+</block>
+</next>
+</block>
+</statement>
+</block>
+</xml>
 </block>
 </next>
 </block>
